@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } @font-face {
+        font-family: Candara;
+        src: url("Candara.ttf");
+    } h1 {
+        font: 48pt/1.4em 'Permanent Marker';
+        text-align: center;
+        text-shadow: 2px 3px 6px purple ;
+        margin: 24px 0;
+    } #textbox {
+        width: 1024px;
+        height: 928px;
+        margin: 0 auto;
+        background: whitesmoke;
+        box-shadow: 2px 3px 6px gainsboro;
+        border: 1px solid gainsboro;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        gap: 55px;
+        text-align: center;
+    } figure {
+        margin: 24px;
+    } img, .zoom {
+        width: 200px;
+        height: 200px;
+        border: 1px solid gray;
+        box-shadow: 2px 3px 6px gray;
+        transition: transform 0.5s;
+    } figcaption {
+        font: 12pt/1.4em Candara;
+        margin-top: 3px;
+    } .zoom {
+        background: url("Thumb-Eternally-One.jpg");
+        background-size: 100%;
+        background-position: center;
+    } img:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s;
+    } .zoom:hover {
+        background-size: 105%;
+        transition: background-size 0.5s;
+    }
+</style>
+</head>
+
+<body style="background-image: url('spiral1.jpg'); background-size: cover">
+    <h1>Portfolio</h1>
+    <div id= "gallerybox" style="position:relative;">
+    <a href="mediums.html">
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background-color:transparent; z-index:1;">
+    </div>
+    </a>
+    <div id="textbox" style="position:relative; z-index:2;">
+        <!-- Leaves photo -->
+        <figure>
+            <a href="The-String-of-Life.JPG">
+            <img src="Thumb-The-String-of-Life.jpg" />
+            </a>
+            <figcaption>
+            "The String of Life"
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="Eternally-One.JPG">
+            <div class="zoom"></div>
+            </a>
+            <figcaption>
+            "Eternally One"
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="Ember-of-Hope.jpg">
+            <img src="Thumb-Ember-of-Hope.jpg" />
+            </a>
+            <figcaption>
+            "Ember of Hope"
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="Voyage-of-a-Golden-Heart.jpg">
+            <img src="Thumb-Voyage-of-a-Golden-Heart.jpg" />
+            </a>
+            <figcaption>
+            "Voyage of a Golden Soul"
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="Keepin-It-Gnarly.jpg">
+            <img src="Thumb-Keepin-It-Gnarly.jpg" />
+            </a>
+            <figcaption>
+            "Keepin It Gnarly"
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="A-Simpler-Time.jpg">
+            <img src="Thumb-A-Simpler-Time.jpg" />
+            </a>
+            <figcaption>
+            "A Simpler Time"
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="South-Trian.jpg">
+            <img src="Thumb-South-Trian.jpg" />
+            </a>
+            <figcaption>
+            "South Train"
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="Moonlight.jpg">
+            <img src="Thumb-Moonlight-01.jpg" />
+            </a>
+            <figcaption>
+            "Moonlight"
+            </figcaption>
+        </figure>
+        <figure>
+            <a href="Keepin-My-Spirit-High.jpg">
+            <img src="Thumb-Keepin-My-Spirit-High.jpg" />
+            </a>
+            <figcaption>
+            "Keepin My Spirit High"
+            </figcaption>
+        </figure>
+    </div>
+    </div>
+</body>
+</html>
