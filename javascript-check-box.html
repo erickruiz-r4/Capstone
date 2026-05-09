@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Check Boxes</title>
+<style>
+    * {margin: 0; padding: 0;}
+    body {
+        background: whitesmoke;
+    } form {
+        background: white;
+        width: 400px;
+        margin: 36px auto;
+        padding: 24px;
+        font: 14pt/1.6em Candara;
+        border: 1px solid darkgray;
+    } input[type="text"] {
+        background: white;
+        font: 14pt/1.4em Candara;
+        width: 100%;
+        border: 1px dotted gray;
+    } input:focus {
+        background: lavender;
+    }
+</style>
+<script language="JavaScript">
+    function toggle(source) {
+        checkboxes = document.getElementsByName('foo');
+        for(var checkbox in checkboxes)
+        checkboxes[checkbox].checked = source.checked;
+    }
+</script>
+</head>
+
+<body>
+
+<form>
+<label>Name</label>
+<input type="text" name="name" value=""><br/><input type="checkbox" onClick="toggle(this)" /> Check/uncheck all<br/>
+<input type="checkbox" name="foo" value="bar1"> Bar 1<br/>
+<input type="checkbox" name="foo" value="bar2"> Bar 2<br/>
+<input type="checkbox" name="foo" value="bar3"> Bar 3<br/>
+<input type="checkbox" name="foo" value="bar4"> Bar 4<br/>
+</form>
+</body>
+</html>

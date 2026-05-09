@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet">
+<style>
+    * {margin: 0; padding: 0;}
+    body {
+        background: whitesmoke;
+    } #page {
+        width: 7in;
+        height: 9.5n;
+        background: url("spiral.jpg");
+        background-size: cover;
+        background-position: center;
+        border: 1px solid darkgray;
+        margin: 48px auto;
+    } h1 {
+        font: 600 96pt/1.4em Roboto;
+        text-align: center;
+        background: linear-gradient(to right, black, indigo, black);
+        background-clip: text;
+        color: transparent;
+    } button {
+        width: 100px;
+        height: 40px;
+        background: lightgreen;
+        border-radius: 6px;
+        display: block;
+        margin: 24px auto;
+    } @media print {
+        button {
+            display: none;
+        }
+    }
+</style>
+<script language="javascript" type="text/javascript">
+    function printPage() {
+        window.print();
+    }
+</script> 
+</head>
+
+<body>
+    <div id="page">
+        <h1>50 % OFF AT THROUGH THE ROOM!</h1>
+        <button onClick="printPage()">Print Page</button>
+</div>
+</body>
+</html>
